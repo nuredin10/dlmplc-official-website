@@ -1,0 +1,191 @@
+.door-container {
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+  }
+
+  .ldoor {
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./gate1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-color: aquamarine; */
+    height: 100%;
+    position: absolute;
+    left: 0;
+    /* animation: ldoor 3s; */
+    /* left: -50%; */
+    z-index: 10000000;
+  }
+
+  @keyframes ldoor {
+    from {
+      left: 0;
+    }
+
+    to {
+      left: -50%;
+    }
+  }
+
+  @keyframes enter {
+    from {
+      left: 45%;
+    }
+
+    to {
+      left: -60%;
+    }
+  }
+
+  .rdoor {
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./gate2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-color: rgb(255, 217, 46); */
+    height: 100%;
+    position: absolute;
+    right: 0;
+    /* animation: rdoor 3s; */
+    /* right: -50%; */
+    z-index: 100000000;
+  }
+
+  @keyframes rdoor {
+    from {
+      right: 0;
+    }
+
+    to {
+      right: -50%;
+    }
+  }
+  @media (max-width: 800px) {
+      .ldoor{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./mob-gate1.jpg');
+      }
+      .rdoor{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./mob-gate2.jpg');
+    }
+  }
+
+  .inside-door {
+    position: absolute;
+  }
+
+  .Enter-button {
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    position: absolute;
+    z-index: 100000001;
+    top: 57%;
+    left: 45%;
+    margin: auto;
+    width: 13%;
+    height: 7%;
+    display: block;
+  }
+
+  .Enter-button:hover {
+    background-color: white;
+    color: black;
+  }
+
+
+
+  .opening-title {
+    position: absolute;
+    top: 47%;
+    left: 45.5%;
+    color: white;
+    position: absolute;
+    z-index: 100000001;
+  }
+
+  .bg-image-container {
+    height: 35rem;
+    background-image: url('img/bg-middle-image.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    /* border: 1px solid red; */
+    width: 100%;
+  }
+
+  .open-logo {
+    position: absolute;
+    width: 11rem;
+    height: 6rem;
+    left: 45%;
+    top: 32%;
+    /* margin: auto; */
+    z-index: 10000000000;
+  }
+
+  .video-container video {
+    /* border: 1px solid red; */
+    width: 100%;
+  }
+
+  @media (max-width: 800px) {
+    .Enter-button {
+      width: 28%;
+      left: 37%;
+      top: 50%;
+    }
+
+    .open-logo {
+      width: 8rem;
+      left: 35%;
+      top: 25%;
+    }
+
+    .opening-title {
+      top: 40%;
+      left: 30%;
+    }
+    .bg-image-container {
+        height: 23rem;
+        /* border: 1px solid red; */
+        background-size: 100% 100%;
+    }
+    .video-container video {
+        /* border: 1px solid red; */
+        width: 1000%;
+      }
+      .title-desc .DLM{
+          /* border: 1px solid red; */
+          margin-bottom: 10rem;
+      }
+
+      .home-images{
+        width: 80%;
+        /* border: 1px solid red; */
+      }
+     
+
+      .flag{
+        margin-left: 3.3rem;
+        height: 3rem;
+        width: 5rem;
+      }
+  }
+
+  .ldoor img{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    width: 10rem;
+  }
+
+  .rdoor img{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    width: 10rem;
+  }
+
+ 
